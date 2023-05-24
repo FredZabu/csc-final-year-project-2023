@@ -20,10 +20,10 @@
 - [Made by](#made-by)
 
 ##group-members
-Asiimwe Fred 
-Baluku Wilton
-Mutebi Paul
-Ouma Benerd Ochienge
+- **ASIIMWE FRED**
+- **Baluku Wilton**
+- **Mutebi Paul**
+- **Ouma Benerd Ochienge**
 
 ## Overview
 
