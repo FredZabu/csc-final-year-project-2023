@@ -7,39 +7,25 @@
 </div>
 
 <!-- TABLE OF CONTENTS -->
-  <h2 >Table of Contents</h2>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#the-problem">The Problem</a>
-    </li>
-    <li>
-        <a href="#the-solution">The Solution</a>
-    </li>
-    <li>
-        <a href="#how-it-work">How Does it Work?</a>
-    </li>
-    <li>
-        <a href="#how-to-use">How to Use?</a>
-    </li>
-    <li>
-        <a href="#getting-started">Getting Started</a>
-    </li>
-    <li>
-        <a href="#made-by">Made By</a>
-    </li>
-  </ol>
+## Table of Contents
+- [Group Members](#group-members)
+- [Overview](#overview)
+  - [The Problem](#the-problem)
+  - [Screenshot](#screenshot)
+- [](#the-solution)
+  - [Built with](#built-with)
+  - [how it works](#how-it-works)
+  - [how to use it](#how-to-use)
+- [Getting Started](#getting-started)
+- [Made by](#made-by)
 
-<!-- ABOUT THE PROJECT -->
+##group-members
+Asiimwe Fred 
+Baluku Wilton
+Mutebi Paul
+Ouma Benerd Ochienge
 
-<a id="about-the-project"></a>
-
-## About The Project
+## Overview
 
 SMRS is a decentralized solution for Electronic Medical Records sharing systems (EMR). It uses Ethereum network and IPFS technology at its core, giving you complete control of your data. Only authorized people and registered Medical Institutes can access your records.
 
@@ -48,16 +34,6 @@ Why Choose SMRS:
 - The entire system of SMRS is based on blockchain technology. Hence it is practically un hackable
 - There is no actual person behind the organization. It is a smart contract, making it transparent to the public
 - All the media is stored on InterPlanetary File System (IPFS) network. Making it completely safe and private.
-
-<a id="built-with"></a>
-
-### Built With
-
-- [Ethereum](https://ethereum.org/en/)
-- [Solidity](https://soliditylang.org/)
-- [Truffle](https://trufflesuite.com/)
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
 
 <!-- THE PROBLEM -->
 
@@ -76,9 +52,11 @@ An electronic health record is defined as an electronic version of a medical his
 - **Time and Money**
   It also takes time to demo EHR products and negotiate with EHR system vendors to choose and implement the right system for your practice.
 
-<!-- THE SOLUTION -->
+### Screenshot
 
-<a id="the-solution"></a>
+![](./solution-screenShots/1_first.png)
+![](./solution-screenShots/2_second.png)
+![](./solution-screenShots/3_third.png)
 
 ## The Solution
 
@@ -93,9 +71,14 @@ SMRS provides a decentralized easy to use Electronic Medical Record system(EMR).
 - **Non Profit**
   SMRS is a free to use, non profit system. One does not need to buy this software. It is available for everyone. There are some public open features which can be accessed by anyone, be it admin, owner or someone visiting the website for he first time. All that is required is a crypto wallet.
 
-<!-- HOW DOES IT WORK -->
+### Built With
 
-<a id="how-it-work"></a>
+- [Ethereum](https://ethereum.org/en/)
+- [Solidity](https://soliditylang.org/)
+- [Truffle](https://trufflesuite.com/)
+- [React.js](https://reactjs.org/)
+- [Bootstrap](https://getbootstrap.com)
+- [IPFS](https://ipfs.tech/)
 
 ## How Does It Work
 
@@ -114,7 +97,6 @@ The application offers a variety of services. Some of them open for the public t
 
 <!-- HOW TO USE -->
 
-<a id="how-to-use"></a>
 
 ## How To Use
 
@@ -128,7 +110,6 @@ The application offers a variety of services. Some of them open for the public t
 
 <!-- GETTING STARTED -->
 
-<a id="getting-started"></a>
 
 ## Getting Started
 
@@ -152,8 +133,6 @@ _To download the source code and on your machine and get it up and running, foll
    ```
 
 <!-- MADE BY -->
-
-<a id="made-by"></a>
 
 ## Made By
 
