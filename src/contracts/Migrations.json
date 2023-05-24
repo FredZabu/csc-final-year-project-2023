@@ -53,7 +53,7 @@
   "sourceMap": "66:398:1:-;;;115:10;92:33;;;;;;;;;;;;;;;;;;;;66:398;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:398:1;;;;;;;",
   "deployedSourceMap": "66:398:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:398:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;131:39;;;:::i;:::-;;;;;;;;;;;;;;;;;;;92:33;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;350:112;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;350:112:1;;;;;;;;;;;;;;;;;:::i;:::-;;131:39;;;;:::o;92:33::-;;;;;;;;;;;;;:::o;350:112::-;244:5;;;;;;;;;;;230:19;;:10;:19;;;209:117;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;446:9;419:24;:36;;;;350:112;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Migrations {\n    address public owner = msg.sender;\n    uint256 public last_completed_migration;\n\n    modifier restricted() {\n        require(\n            msg.sender == owner,\n            \"This function is restricted to the contract's owner\"\n        );\n        _;\n    }\n\n    function setCompleted(uint256 completed) public restricted {\n        last_completed_migration = completed;\n    }\n}\n",
-  "sourcePath": "/home/asiimwe/Desktop/DecentraMed/contracts/Migrations.sol",
+  "sourcePath": "/home/asiimwe/Desktop/Workings/csc-final-year-project/contracts/Migrations.sol",
   "ast": {
     "absolutePath": "project:/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -929,10 +929,16 @@
       "links": {},
       "address": "0x778023eD2b16998b350a12462bcBE1787B8f45da",
       "transactionHash": "0xf4c826f49153ab542ec2d8b6f58fd5dca4c80c850ddb329bf54b7c767fcbe9a6"
+    },
+    "11155111": {
+      "events": {},
+      "links": {},
+      "address": "0x29c63AE6a1cac4057C8a208b6C0e15f04461111D",
+      "transactionHash": "0xe0ce3aea09b3b417f4093a2e2682083670e44aa333ecf7c7c784e2d48c1fc33c"
     }
   },
   "schemaVersion": "3.4.14",
-  "updatedAt": "2023-05-21T02:10:02.323Z",
+  "updatedAt": "2023-05-24T03:31:51.630Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

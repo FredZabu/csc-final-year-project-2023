@@ -107,6 +107,7 @@ The application offers a variety of services. Some of them open for the public t
 5. On your network tab on the top right corner of meta mask, select Sepolia Test Net.
 6. You are all setup to use SMRS. Head over to the public dashboard in the application to connect to the blockchain using your Meta Mask wallet and try out the various features.
    (HINT : Try Hospital ID 1 to 4 to get their details)
+7. For the developers you can test it out on a local blockchain using Ganache.   
 
 <!-- GETTING STARTED -->
 

@@ -11,7 +11,7 @@ const WhyUs = () => {
                 <div className="row">
                     <div className="col-lg-4 d-flex align-items-stretch">
                         <div className="content">
-                            <h3>Why Choose D-Med?</h3>
+                            <h3>Why Choose SMRS?</h3>
                             <p>
                                 Blockchain technology has a great potential for improving efficiency, security and privacy of Electronic Health Records sharing systems. However, existing solutions relying on a centralized database are susceptible to traditional security problems such as Denial of Service (DoS) attacks and a single point of failure. In addition, past solutions exposed users to privacy linking attacks and did not tackle performance and scalability challenges.
                             </p>
