@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react'
 import "./Patient.css";
 import Patient1 from "../../../Components/Patient/Patient"
@@ -7,6 +8,7 @@ import DMed from "../../../contracts/DMed.json";
 import Loading from '../../../Components/Loading/Loading';
 import { useNavigate } from 'react-router-dom';
 
+
 const Patient = () => {
 
     const [web3, setWeb3] = useState(undefined);
@@ -14,13 +16,14 @@ const Patient = () => {
     const [contract, setContract] = useState(undefined);
     const history = useNavigate;
     const [yourId, setYourId] = useState("");
-    const [patient, setPatient] = useState(null);
+    const [patient, setPatient] = useState("");
     const [yourIdRec, setYourIdRec] = useState("");
     const [records, setRecords] = useState([]);
     const [addAuthId, setAddAuthId] = useState("");
     const [addAuthAddress, setAddAuthAddress] = useState("");
     const [removeAuthId, setRemoveAuthId] = useState("");
     const [removeAuthAddress, setRemoveAuthAddress] = useState("");
+    const [clickFlag, setClickFlag] = useState(false);
 
     const isReady = () => {
         return (
@@ -29,7 +32,13 @@ const Patient = () => {
             && typeof accounts !== 'undefined'
         );
     }
-
+    const clickLoad = () => {
+        return <div className="load-wrapper">
+                <div className="spinner-border text-white spinner" role="status">
+                    <span className="sr-only"></span>
+                </div>
+        </div>
+    }
     useEffect(() => {
         const init = async () => {
             try {
@@ -38,7 +47,7 @@ const Patient = () => {
                 const networkId = await web3.eth.net.getId();
                 const deployedNetwork = DMed.networks[networkId];
                 if(deployedNetwork === undefined)
-                    throw new Error('Make sure you are on the corrent network. Set the network to Ropsten Test Network');
+                    throw new Error('Make sure you are on the correct network. Set the network to Ropsten Test Network');
                 const contract = new web3.eth.Contract(
                     DMed.abi,
                     deployedNetwork && deployedNetwork.address,
@@ -61,13 +70,17 @@ const Patient = () => {
 
     const getPatient = async (e) => {
         e.preventDefault();
+        setClickFlag(!clickFlag);
         try {
             const pat = await contract.methods.getPatientDetails(yourId).call({ from: accounts[0] });
             setPatient(pat);
+            setClickFlag(!clickFlag);
         } catch (err) {
             window.alert("Could not get details of patient. Please make sure you have the correct rights and you have the correct Id")
+            setClickFlag(!clickFlag);
         }
         setYourId("");
+       
     }
 
     const getRecords = async (e) => {
@@ -167,7 +180,7 @@ const Patient = () => {
                                         <input type="text" name="address" className="form-control" id="patient-address" placeholder="Your Id" required value={yourId} onChange={e => setYourId(e.target.value)} />
                                     </div>
                                     <div className="col-md-4 form-group mt-3 mt-md-0 py-1">
-                                        <button type="submit">Click Here</button>
+                                        <button type="submit">Click Here {clickFlag ? clickLoad()  : ''}</button>
                                     </div>
                                 </div>
                             </form>

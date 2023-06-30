@@ -5,6 +5,7 @@ import DMed from "../../../contracts/DMed.json";
 import Loading from '../../../Components/Loading/Loading';
 import { useNavigate } from 'react-router-dom';
 import { create } from "ipfs-http-client";
+const Buffer = require('buffer/').Buffer;
 
 
 const Admin = () => {

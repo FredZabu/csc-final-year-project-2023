@@ -128,8 +128,9 @@ const Hospital = () => {
     const handleSubmitRecord = async (e) => {
         e.preventDefault();
         try {
-            const result = await ipfs.add(recordBuffer);
-            await contract.methods.addNewRecord(recordAdd.hosId, recordAdd.patId, recordAdd.cond, recordAdd.desc, recordAdd.allergy, result.path).send({ from: accounts[0] });
+            const result = "";
+            // const result = await ipfs.add(recordBuffer);
+            await contract.methods.addNewRecord(recordAdd.hosId, recordAdd.patId, recordAdd.cond, recordAdd.desc, recordAdd.allergy, result).send({ from: accounts[0] });
             window.alert("Record added Successfully");
         } catch (error) {
             window.alert("Record could not be added. Make sure you are an authorized and check input fields");
